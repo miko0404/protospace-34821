@@ -4,7 +4,9 @@ class UsersController < ApplicationController
     @name = @user_name
     @profile = @user_profile
     @occupation = @user_occupation
-    @position = @user_position
-    #@prototypes = @user_prototype.user.all
+    
+    @prototypes = @user.prototypes.all
+    #binding.pry
+    
   end
 end
